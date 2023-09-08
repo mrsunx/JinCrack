@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B7712FD2AAADA5100A347E7 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = 7B7712FC2AAADA5100A347E7 /* Zip */; };
+		7B7713002AAADB2B00A347E7 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 7B7712FF2AAADB2B00A347E7 /* SwiftyJSON */; };
+		7B7DCE782AAAE72F00491645 /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7B7DCE772AAAE72F00491645 /* SwifterSwift */; };
 		7BED283A2AAABE6800414D09 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BED28392AAABE6800414D09 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7DCE782AAAE72F00491645 /* SwifterSwift in Frameworks */,
+				7B7713002AAADB2B00A347E7 /* SwiftyJSON in Frameworks */,
+				7B7712FD2AAADA5100A347E7 /* Zip in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +84,11 @@
 			dependencies = (
 			);
 			name = JinCrack;
+			packageProductDependencies = (
+				7B7712FC2AAADA5100A347E7 /* Zip */,
+				7B7712FF2AAADB2B00A347E7 /* SwiftyJSON */,
+				7B7DCE772AAAE72F00491645 /* SwifterSwift */,
+			);
 			productName = JinCrack;
 			productReference = 7BED28362AAABE6800414D09 /* JinCrack */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +117,11 @@
 				Base,
 			);
 			mainGroup = 7BED282D2AAABE6800414D09;
+			packageReferences = (
+				7B7712FB2AAADA5100A347E7 /* XCRemoteSwiftPackageReference "Zip" */,
+				7B7712FE2AAADB2B00A347E7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				7B7DCE762AAAE72F00491645 /* XCRemoteSwiftPackageReference "SwifterSwift" */,
+			);
 			productRefGroup = 7BED28372AAABE6800414D09 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,6 +300,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7B7712FB2AAADA5100A347E7 /* XCRemoteSwiftPackageReference "Zip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Zip";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		7B7712FE2AAADB2B00A347E7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		7B7DCE762AAAE72F00491645 /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7B7712FC2AAADA5100A347E7 /* Zip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B7712FB2AAADA5100A347E7 /* XCRemoteSwiftPackageReference "Zip" */;
+			productName = Zip;
+		};
+		7B7712FF2AAADB2B00A347E7 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B7712FE2AAADB2B00A347E7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		7B7DCE772AAAE72F00491645 /* SwifterSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B7DCE762AAAE72F00491645 /* XCRemoteSwiftPackageReference "SwifterSwift" */;
+			productName = SwifterSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7BED282E2AAABE6800414D09 /* Project object */;
 }
